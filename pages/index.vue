@@ -7,8 +7,8 @@
       </div>
       <v-card>
         <v-card-title class="headline"
-          >Welcome to the Vuetify + Nuxt.js template</v-card-title
-        >
+          >Welcome to the Vuetify + Nuxt.js template
+        </v-card-title>
         <v-card-text>
           <p>
             Vuetify is a progressive Material Design component framework for
@@ -39,7 +39,9 @@
             more exciting features in the future.
           </p>
           <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+            <em>
+              <small>&mdash; John Leider</small>
+            </em>
           </div>
           <hr class="my-3" />
           <a href="https://nuxtjs.org/" target="_blank">Nuxt Documentation</a>
@@ -57,14 +59,17 @@
   </v-layout>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue'
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import Component from 'vue-class-component'
 
-export default {
+@Component({
   components: {
     Logo,
     VuetifyLogo
   }
-}
+})
+export default class Index extends Vue {}
 </script>
