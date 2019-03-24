@@ -63,7 +63,7 @@
 import Vue from 'vue'
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
-import Component from 'vue-class-component'
+import { Prop, Component } from '~/node_modules/vue-property-decorator'
 
 @Component({
   components: {
@@ -71,5 +71,7 @@ import Component from 'vue-class-component'
     VuetifyLogo
   }
 })
-export default class Index extends Vue {}
+export default class Hoge extends Vue {
+  @Prop({ default: false }) readonly propA!: boolean
+}
 </script>

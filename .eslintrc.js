@@ -5,10 +5,15 @@ module.exports = {
         node: true
     },
     parserOptions: {
-        parser: 'babel-eslint',
-        ecmaFeatures: {
-            legacyDecorators: true
-        }
+        // parser: 'babel-eslint',
+        // ecmaFeatures: {
+        //     legacyDecorators: true
+        // }
+        "parser": "@typescript-eslint/parser",
+        "parserOptions": {
+            "sourceType": "module",
+            "project": "./tsconfig.json"
+        },
     },
     extends: [
         '@nuxtjs',

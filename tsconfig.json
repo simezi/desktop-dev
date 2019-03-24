@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
+    "module": "es2015",
     "allowJs": true,
     "strict": true,
+    "strictPropertyInitialization": false,
     "moduleResolution": "node",
     "baseUrl": "./",
     "paths": {
